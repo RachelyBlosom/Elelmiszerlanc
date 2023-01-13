@@ -5,6 +5,18 @@
   <i></i>
   <br>
 </div>
+<a1>  EN: </a1>
+   ip cím számolás
+   ip cím beírás
+------------------
+<a1> GERG: </a1>
+   switch + router alapconfig
+   
+------------------
+<a1> SANYUSSY: </a1>
+   Topolgya
+   TO BE CONTUINED
+------------------
 
 ESZKÖZÖK:
 ------------------
@@ -14,7 +26,7 @@ ESZKÖZÖK:
 ------------------
 3 db router
 ------------------
-2 db kifli router
+2 db wifi router
 ------------------
 5 db laptop
 ------------------
