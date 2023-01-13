@@ -5,15 +5,14 @@
   <i></i>
   <br>
 </div>
- EN: 
+EN: 
    ip cím számolás
    ip cím beírás
 ------------------
- GERG: 
+GERG: 
    switch + router alapconfig
-   
 ------------------
- SANYUSSY: 
+SANYUSSY: 
    Topolgya
    TO BE CONTUINED
 ------------------
