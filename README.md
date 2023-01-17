@@ -8,9 +8,11 @@
 EN: 
    ip cím számolás
    ip cím beírás
+   Wifi router beállítás
 ------------------
 GERG: 
    switch + router alapconfig
+   PPT
 ------------------
 SANYUSSY: 
    Topolgya
