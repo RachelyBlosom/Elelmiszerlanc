@@ -10,16 +10,19 @@ EN:
    ip cím számolás
    ip cím beírás
    Wifi router beállítás
+   
 ------------------
 GERG: 
    switch + router alapconfig
    PPT
    Topologika
+   
 ------------------
 SANYUSSY: 
    Vlan beállítások
    Forgalomirányítás
    TO BE CONTUINED
+   
 ------------------
 
 ESZKÖZÖK:
