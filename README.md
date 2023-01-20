@@ -5,11 +5,11 @@
   <i></i>
   <br>
 </div>
-------------------
 EN: 
    ip cím számolás
    ip cím beírás
    Wifi router beállítás
+   
 ------------------
 GERG: 
    switch + router alapconfig
