@@ -9,6 +9,7 @@ EN:
    ip cím számolás
    ip cím beírás
    Wifi router beállítás
+   
 ------------------
 GERG: 
    switch + router alapconfig
@@ -16,6 +17,8 @@ GERG:
    Topologika
 ------------------
 SANYUSSY: 
+   Vlan beállítások
+   Forgalomirányítás
    TO BE CONTUINED
 ------------------
 
@@ -79,6 +82,13 @@ konfigurálás
 (leirás)
 (számítás)
 (megoldás)
+------------------
+Native vlan - Piros
+Vlan 10 - kék
+vlan 20 - zöld
+vlan 30 - lila
+vlan 40 - lozsazin
+vlan 50 - zitrom
 ------------------
 VÉGE
 ------------------
