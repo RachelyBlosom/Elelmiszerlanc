@@ -13,9 +13,9 @@ EN:
 GERG: 
    switch + router alapconfig
    PPT
+   Topologika
 ------------------
 SANYUSSY: 
-   Topolgya
    TO BE CONTUINED
 ------------------
 
