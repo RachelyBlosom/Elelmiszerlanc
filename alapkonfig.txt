@@ -1,0 +1,100 @@
+R1
+
+ena
+clock set 12:00:00 20 jan 2023
+conf t 
+ena sec Cisco123
+no ip domain-lookup
+service password-encryption
+banner motd #valami#
+line console 0
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+
+
+
+SW1
+
+ena
+clock set 12:00:00 20 jan 2023
+conf t 
+ena sec Cisco123
+no ip domain-lookup
+service password-encryption
+banner motd #valami#
+line console 0
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+
+vlan 69
+name Piros
+
+vlan 10
+name Kek
+
+vlan 20
+name Zold
+
+vlan 30
+name Lila
+
+vlan 40
+name Rozsaszin
+
+vlan 50
+name Citrom
+
+exit
+
+int range fa0/1-
+switchport mode access
+switchport access vlan 69
+
+
+int range fa0/
+switchport mode access
+switchport access vlan 10
+
+
+int range fa0/
+switchport mode access
+switchport access vlan 20
+
+
+int range fa0/
+switchport mode access
+switchport access vlan 30
+
+
+int range fa0/
+switchport mode access
+switchport access vlan 40
+
+
+int range fa0/
+switchport mode access
+switchport access vlan 50
+
+int g0/1
+switchport mode trunk
+switchport trunk native vlan 69
+switchport trunk allow vlan 10,20,30,40,50,69
+exit
