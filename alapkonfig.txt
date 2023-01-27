@@ -2,7 +2,8 @@ R1
 
 ena
 clock set 12:00:00 20 jan 2023
-conf t 
+conf t
+host R1
 ena sec Cisco123
 no ip domain-lookup
 service password-encryption
@@ -59,6 +60,65 @@ exit
 
 ip route 0.0.0.0 0.0.0.0 10.20.10.2 255.255.255.252
 
+R2
+
+ena
+clock set 12:00:00 20 jan 2023
+conf t
+host R2
+ena sec Cisco123
+no ip domain-lookup
+service password-encryption
+banner motd #valami#
+line console 0
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+
+int g0/1
+des router trunk port
+switchport mode trunk
+switchport trunk allow vlan 10,20,30,40,50,69
+no sh
+exit
+
+R3
+
+ena
+clock set 12:00:00 20 jan 2023
+conf t
+host R3
+ena sec Cisco123
+no ip domain-lookup
+service password-encryption
+banner motd #valami#
+line console 0
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+line vty 0 15
+pass Cisco123
+login
+logg syn
+exec 5
+exit
+
+int g0/1
+des router trunk port
+switchport mode trunk
+switchport trunk allow vlan 10,20,30,40,50,69
+no sh
+exit
 
 SW1
 
