@@ -20,7 +20,44 @@ logg syn
 exec 5
 exit
 
+int serial0/0/0
+des router 1 fele
+ip add 10.20.10.2 255.255.255.252
+no sh
 
+int se0/0/0.10
+des vlan 10
+enc dot 10
+ip add 199.40.0.5 255.255.224.0
+
+int se0/0/0.20
+des vlan 20
+enc dot 20
+ip add 199.40.0.6 255.255.224.0
+
+int se0/0/0.30
+des vlan 30
+enc dot 30
+ip add 199.40.0.7 255.255.224.0
+
+int se0/0/0.40
+des vlan 40
+enc dot 40
+ip add 199.40.0.8 255.255.224.0
+
+int se0/0/0.50
+des vlan 50
+enc dot 50
+ip add 199.40.0.9 255.255.224.0
+
+int g0/1
+des router trunk port
+switchport mode trunk
+switchport trunk allow vlan 10,20,30,40,50,69
+no sh
+exit
+
+ip route 0.0.0.0 0.0.0.0 10.20.10.2 255.255.255.252
 
 SW1
 
